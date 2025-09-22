@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+header p {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-top: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-box {
+  border: 2px dashed #38bdf8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#file-upload {
+  display: none;
+}
+
+.preview {
+  margin: 15px 0;
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.result-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.result-card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+.result-label,
+.confidence {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #94a3b8;
+}
