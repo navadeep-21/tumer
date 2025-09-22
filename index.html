@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Tumor Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Brain Tumor Prediction</h1>
+      <p>Upload an MRI scan and check prediction results.</p>
+    </header>
+
+    <main>
+      <form class="upload-box">
+        <label for="file-upload" class="file-label">Choose MRI Image</label>
+        <input type="file" id="file-upload" accept="image/*">
+
+        <div class="preview" id="preview">
+          <p>No image selected</p>
+        </div>
+
+        <button type="submit" class="btn">Predict Tumor Type</button>
+      </form>
+
+      <div class="result-card">
+        <h2>Prediction Result</h2>
+        <p class="result-label">Tumor Type: <span id="result">—</span></p>
+        <p class="confidence">Confidence: <span id="confidence">—</span></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Brain Tumor Classifier | Designed by You</p>
+    </footer>
+  </div>
+</body>
+</html>
