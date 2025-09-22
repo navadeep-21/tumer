@@ -6,22 +6,20 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #f8fafc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
   width: 90%;
-  max-width: 800px;
-  background: #1e293b;
-  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -30,38 +28,54 @@ header {
 }
 
 header h1 {
-  font-size: 28px;
-  color: #38bdf8;
+  color: #2c3e50;
 }
 
 header p {
-  font-size: 15px;
-  color: #cbd5e1;
-  margin-top: 5px;
+  font-size: 1.1em;
+  color: #555;
 }
 
-main {
+/* Project Description Card */
+.project-description {
+  background: #eef5ff;
+  border-left: 5px solid #007bff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.project-description p {
+  font-size: 1.05em;
+  color: #2c3e50;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Upload Box */
+.upload-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.upload-box {
-  border: 2px dashed #38bdf8;
+  align-items: center;
   padding: 20px;
+  border: 2px dashed #007bff;
   border-radius: 10px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.03);
+  background: #fafcff;
+  margin-bottom: 20px;
 }
 
 .file-label {
-  display: inline-block;
+  background: #007bff;
+  color: white;
   padding: 10px 20px;
-  background: #38bdf8;
-  color: #0f172a;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.file-label:hover {
+  background: #0056b3;
 }
 
 #file-upload {
@@ -69,60 +83,51 @@ main {
 }
 
 .preview {
-  margin: 15px 0;
-  background: #0f172a;
-  border-radius: 8px;
+  margin-bottom: 15px;
   padding: 10px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #94a3b8;
-}
-
-.preview img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
+  text-align: center;
+  color: #777;
+  font-style: italic;
 }
 
 .btn {
-  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
-  border: none;
+  background: #28a745;
+  color: white;
   padding: 12px 20px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 1em;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background: #218838;
 }
 
+/* Result Card */
 .result-card {
+  margin-top: 20px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #f9f9f9;
   border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 .result-card h2 {
   margin-bottom: 10px;
-  font-size: 20px;
-  color: #38bdf8;
+  color: #444;
 }
 
-.result-label,
-.confidence {
-  font-size: 16px;
-  margin-top: 6px;
+.result-label, .confidence {
+  font-size: 1.1em;
+  margin-top: 5px;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 20px;
-  font-size: 13px;
-  color: #94a3b8;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
 }
